@@ -3,8 +3,6 @@
 @tailwind utilities;
 
 
-/* Responsive padding */
-
 .page-wrapper {
   padding-left: 1rem;    /* px-4 = 16px */
   padding-right: 1rem;
@@ -13,24 +11,25 @@
 
 @media (min-width: 768px) {
   .page-wrapper {
-    padding-left: 1.5rem;  /* px-6 = 24px */
+    padding-left: 1.5rem;  
     padding-right: 1.5rem;
   }
 }
 
 @media (min-width: 1024px) {
   .page-wrapper {
-    padding-left: 2.5rem;  /* px-10 = 40px */
+    padding-left: 2.5rem;  
     padding-right: 2.5rem;
   }
 }
 
 @media (min-width: 1280px) {
   .page-wrapper {
-    padding-left: 5rem;  /* px-20 = 80px */
+    padding-left: 5rem;  
     padding-right: 5rem;
   }
 }
+
 
 /* -------------------------------*/
 

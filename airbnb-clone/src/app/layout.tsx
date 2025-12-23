@@ -12,10 +12,7 @@ export default function RootLayout({
     <html lang="pt-br">
       <body>
         <Header/>
-        <div className="w-full border-b border-gray-200"></div>
-        <main className="page-wrapper">          
-          {children}
-        </main>        
+        {children}
       </body>
     </html>
   );

@@ -49,14 +49,10 @@ export default function Header() {
 
       {/* Search bar para desktop/tablet */}
       <div className="hidden md:flex container mx-auto px-6 py-4 justify-center">    
-        <SearchBar />
-        <SearchBar />
+        <SearchBar />        
       </div>
 
-      
-
-
-
+    
 
       {/* MOBILE <640px */}                   {/* CERTO */}
       <div className="flex md:hidden px-6 py-4 flex-col gap-4"> 
