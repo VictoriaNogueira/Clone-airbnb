@@ -18,7 +18,7 @@ export default async function Home({ searchParams }: HomeProps) {
   return ( 
      <div className="title font-semibold text-black ">     
       <h1>Acomodações muito procuradas</h1>     
-      <main className="px-4 py-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 lg:grid-cols-7 gap-6">
+      <main className="grid grid-cols-2 gap-6 px-4 py-6 justify-items-center sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7">
         {rooms.map((room: Room) => (
           <RoomCard 
             key={room.id}
@@ -29,8 +29,7 @@ export default async function Home({ searchParams }: HomeProps) {
             reviewNote={room.reviewNote}
             availableDays={room.availableDays}
           />
-        ))}
-          
+        ))}  
       </main>
       <RoomPagination currentPage={currentPage} />
       </div>

@@ -1,12 +1,40 @@
-@import "tailwindcss";
 @import "tailwindcss/preflight";
+@import "tailwindcss";
 @tailwind utilities;
 
+.page-room {
+  @apply mx-auto max-w-full px-4 pt-6;
+}
+
+@media (min-width: 640px) {
+  .page-room {
+    @apply px-6;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-room {
+    @apply px-8;
+  }
+}
+
+@media (min-width: 1280px) {
+  .page-room {
+    @apply px-10 max-w-[1120px];
+  }
+}
+
+@media (min-width: 1536px) {
+  .page-room {
+    @apply max-w-[1320px];
+  }
+}
 
 .page-wrapper {
   padding-left: 1rem;    /* px-4 = 16px */
   padding-right: 1rem;
   padding-top: 1rem;
+  padding-bottom: 2rem;    
 }
 
 @media (min-width: 768px) {
@@ -31,9 +59,6 @@
 }
 
 
-/* -------------------------------*/
-
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -52,3 +77,9 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
