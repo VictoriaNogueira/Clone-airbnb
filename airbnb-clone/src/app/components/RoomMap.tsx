@@ -9,6 +9,7 @@ export default function RoomMap({ lat, lng }: MapProps) {
   return (
     <div className="absoute inset-0">    
       <iframe
+        title="OpenStreetMap"
         className="w-full h-full rounded-xl"
         loading="lazy"
         style={{ border: 0 }}
